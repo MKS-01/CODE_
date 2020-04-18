@@ -51,6 +51,59 @@ console.log("String to Number:", Number(str)); //str to num
 console.log("Boolean conversion:", Boolean(str));
 console.log("Boolean conversion:", Boolean(""));
 
+// let result = condition ? value1 : value2; //conditional operator
+
+//operator
+// OR -> ||
+//AND -> &&
+//not -> !
+
+//loop
+/******************************************************************************/
+
+console.log("while loop...");
+let i = 0;
+while (i < 3) {
+  console.log(i);
+  i++;
+}
+
+console.log("do while...");
+let j = 0;
+do {
+  console.log(j);
+  j++;
+} while (j < 3);
+
+console.log("for loop...");
+for (let k = 0; k < 3; k++) {
+  console.log(k);
+}
+
+// for (;;) {
+//   // repeats without limits
+//   console.log(6);
+// }
+
+// while – The condition is checked before each iteration.
+// do..while – The condition is checked after each iteration.
+
+//switch
+let a = 2 + 2;
+
+switch (a) {
+  case 3:
+    console.log("Too small");
+  case 4:
+    console.log("Exactly!");
+  case 5:
+    console.log("Too big");
+  default:
+    console.log("I don't know such values");
+}
+
+//array
+/******************************************************************************/
 //declaration
 // let arr = new Array();
 // let arr = [];
