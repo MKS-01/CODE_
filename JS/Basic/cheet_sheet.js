@@ -1,3 +1,4 @@
+// https://javascript.info/
 //use strict
 /*The "use strict" directive switches the engine to the “modern” mode,
  changing the behavior of some built-in features.
@@ -102,14 +103,73 @@ switch (a) {
     console.log("I don't know such values");
 }
 
+//function
+/******************************************************************************/
+function showMessage() {
+  console.log("Hello everyone!");
+}
+showMessage();
+
+let sum = (a, b) => a + b;
+console.log("arrow func", sum(2, 3));
+
+const func = () => {};
+console.log("empty func", func);
+
+//object
+/******************************************************************************/
+// let user = new Object(); // "object constructor" syntax
+// let user = {}; // "object literal" syntax
+
+let obj1 = {
+  name: "abc",
+  age: 23
+};
+let obj2 = {
+  city: "mumbai"
+};
+let newObj = { ...obj1, ...obj2 };
+console.log("merge two obj", newObj);
+
+//interate over obj
+for (let key in newObj) {
+  console.log(key, ":", newObj[key]);
+}
+
+/*
+Objects are associative arrays with several special features.
+
+They store properties (key-value pairs), where:
+
+Property keys must be strings or symbols (usually strings).
+Values can be of any type.
+To access a property, we can use:
+
+The dot notation: obj.property.
+Square brackets notation obj["property"]. Square brackets allow to take the key
+from a variable, like obj[varWithKey].
+Additional operators:
+
+To delete a property: delete obj.prop.
+To check if a property with the given key exists: "key" in obj.
+To iterate over an object: for (let key in obj) loop.*/
+
+// There are many other kinds of objects in JavaScript:
+//
+// Array to store ordered data collections,
+// Date to store the information about the date and time,
+// Error to store the information about an error.
+// …And so on.
+
 //array
 /******************************************************************************/
 //declaration
 // let arr = new Array();
 // let arr = [];
+
 let arr = [1, 6, 2, 8, 10, 2];
 
-console.log(arr);
+console.log("array:", arr);
 
 console.log("first element:", arr[0]); //retreive selected value
 
@@ -118,4 +178,8 @@ console.log("replace array:", arr); //replace an element
 
 console.log("count array length:", arr.length);
 
-console.log(arr.shift(10), arr);
+console.log("pop:", arr.pop(), arr); //Extracts the last element of the array and returns it:
+console.log("push", arr.push(100), arr); //Append the element to the end of the array:
+// console.log(arr.shift(), arr);
+
+//
