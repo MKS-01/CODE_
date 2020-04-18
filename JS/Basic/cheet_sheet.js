@@ -199,3 +199,29 @@ console.log("unshift", arr.unshift(200), arr); //Add the element to the beginnin
 // push adds an element to the end.
 // pop takes an element from the end.
 //
+
+// console.log(
+//   "One of the oldest ways to cycle array items is the for loop over indexes:"
+// );
+// for (let i = 0; i < arr.length; i++) {
+//   console.log(arr[i]);
+// }
+//
+// //Technically, because arrays are objects, it is also possible to use for..in:
+//
+// for (let key in arr) {
+//   console.log();
+//   arr[key];
+// }
+
+//array_method
+/******************************************************************************/
+/*
+Add/remove items
+We already know methods that add and remove items from the beginning or the end:
+
+arr.push(...items) – adds items to the end,
+arr.pop() – extracts an item from the end,
+arr.shift() – extracts an item from the beginning,
+arr.unshift(...items) – adds items to the beginning.
+*/
