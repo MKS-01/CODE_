@@ -18,11 +18,11 @@ function twoSum(A, B) {
   var hash = {};
 
   for (var i = 0; i < A.length; i++) {
-    console.log(hash);
-
-    // if (hash[B - A[i]]) {
-    //   return [hash[B - A[i]], i + 1];
-    // }
+    // console.log(hash);
+    //
+    if (hash[B - A[i]]) {
+      return [hash[B - A[i]], i + 1];
+    }
     if (!hash[A[i]]) {
       hash[A[i]] = i + 1;
     }
